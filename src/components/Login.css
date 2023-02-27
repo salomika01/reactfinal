@@ -1,0 +1,162 @@
+
+.loginconteiner{
+    margin-bottom: 50px;
+width: 460px;
+height: 500px;
+background: rgb(243, 239, 239);
+position: fixed;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 200;
+border-radius: 10px;
+
+}
+.closereg{
+    cursor: pointer;
+    font-size: 20px;
+   width: 30px;
+   height: 30px;
+    border-radius: 15px;
+    background-color: rgb(211, 207, 207);
+    border: none;
+    
+   
+}
+
+.closebtn{
+    margin-right: 6px;
+    margin-top: 6px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.avtorizacia{
+   
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.formbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.options{
+    margin: 10px;
+    
+}
+
+
+.forminput01,
+.forminput02{
+   
+    display: flex;
+    flex-direction: column;
+}
+
+.inputp,
+.inputm{
+  
+    height: 55px;
+    width: 402px;
+    border-radius: 8px;
+    border: 1px solid black;
+   
+}
+
+.autbtn,
+.regbtn{
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 194px;
+    padding: 12px 0px;
+   border-top: 0;
+   border-left: 0;
+   border-right: 0;
+   border-bottom: 2px solid black;
+
+}
+.newpsw{
+   margin: 14px;
+   border: none;
+   cursor: pointer;
+
+}
+
+.loginbtn{
+    background: black;
+    color: white;
+    height: 55px;
+    width: 402px;
+    border-radius: 8px;
+   
+  
+
+}
+
+.oroptio{
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.loginsocial{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.fcbk,
+.ggl{
+    height: 55px;
+    width: 200px;
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

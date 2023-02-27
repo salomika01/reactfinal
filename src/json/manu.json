@@ -1,0 +1,103 @@
+
+
+
+    [
+        {
+            "id": 1,
+            "Category" : "Prezents",
+            "title": "საჩუქრები",
+            "img" : "https://adjarastoremedia.s3.amazonaws.com/media/product_category/100x100%E1%83%9C%E1%83%AC%E1%83%94%E1%83%98%E1%83%9D%E1%83%A4%E1%83%9C%E1%83%98%E1%83%AC%E1%83%94%E1%83%91%E1%83%A4%E1%83%98%E1%83%94%E1%83%A0%E1%83%B0%E1%83%A49348%E1%83%B073849%E1%83%B0%E1%83%A3348%E1%83%A4734%E1%83%B0%E1%83%A4%E1%83%A33%E1%83%A4.png"
+
+        },
+        {
+            "id": 2,
+            "Category" : "Technic",
+            "title" : "ტექნიკა",
+            "img": "https://adjarastoremedia.s3.amazonaws.com/media/product_category/Artboard_1_copy_17_%E1%83%A2%E1%83%94%E1%83%A5%E1%83%9C%E1%83%98%E1%83%99%E1%83%90_..png"
+        },
+        {
+            "id": 3,
+            "Category": "Bari",
+            "title": "ბარი & მეტი",
+            "img": "https://adjarastoremedia.s3.amazonaws.com/media/product_category/%E1%83%90%E1%83%9A%E1%83%99%E1%83%9D%E1%83%B0%E1%83%9D%E1%83%9A%E1%83%98_main_page...jpg"
+        },
+        {
+            "id": 4,
+            "Category": "silamaze",
+            "title": "სილამაზე",
+            "img" : "https://adjarastoremedia.s3.amazonaws.com/media/product_category/%E1%83%A1%E1%83%98%E1%83%9A%E1%83%90%E1%83%9B%E1%83%90%E1%83%96%E1%83%94_%E1%83%9B%E1%83%94%E1%83%98%E1%83%9C%E1%83%98....jpg"
+        },
+        {
+            "id": 5,
+            "Category": "tavis-movla",
+            "title": "თავის მოვლა",
+            "img": "https://adjarastoremedia.s3.amazonaws.com/media/product_category/Untitled-1Artboard-1-copy4%E1%83%A2%E1%83%915%E1%83%A74%E1%83%9C%E1%83%A7%E1%83%91%E1%83%A745%E1%83%95%E1%83%A7645%E1%83%91%E1%83%A7_2.png"
+        },
+        {
+            "id": 6,
+            "Category": "ezo",
+            "title": "სახლი & ეზო",
+            "img": "https://adjarastoremedia.s3.amazonaws.com/media/product_category/%E1%83%A1%E1%83%90%E1%83%AE%E1%83%9A%E1%83%98_%E1%83%93%E1%83%90_%E1%83%94%E1%83%96%E1%83%9D_0_5x_1....jpg"
+        },
+ 
+        {
+            "id": 7,
+            "Category": "saxlis-movla",
+            "title": "სახლის მოვლა",
+            "img": "https://adjarastoremedia.s3.amazonaws.com/media/product_category/Artboard_1_copy_16_%E1%83%A1%E1%83%90%E1%83%AE%E1%83%9A%E1%83%98%E1%83%A1_%E1%83%9B%E1%83%9D%E1%83%95%E1%83%9A%E1%83%90...png"
+        },
+ 
+        {
+            "id": 8,
+            "Category": "satamasho",
+            "title": "სათამაშოები",
+            "img": "https://adjarastoremedia.s3.amazonaws.com/media/product_category/8D9AABA7-5279-450E-8168-57FFBBDF1AFC.jpeg"
+        },
+ 
+        {
+            "id": 9,
+            "Category": "wignebi",
+            "title": "წიგნები",
+            "img": "https://adjarastoremedia.s3.amazonaws.com/media/product_category/Artboard_1_copy_15_%E1%83%AC%E1%83%98%E1%83%92%E1%83%9C%E1%83%94%E1%83%91%E1%83%98...png"
+        },
+ 
+        {
+            "id": 10,
+            "Category": "mshobeli",
+            "title": "მშობელი & ბავშვი",
+            "img": "https://adjarastoremedia.s3.amazonaws.com/media/product_category/Artboard_1_copy_12_%E1%83%9B%E1%83%A8%E1%83%9D%E1%83%91%E1%83%94%E1%83%9A%E1%83%98_%E1%83%93%E1%83%90_%E1%83%91%E1%83%90%E1%83%95%E1%83%A8%E1%83%95%E1%83%98_...png"
+        },
+ 
+        {
+            "id": 11,
+            "Category": "fitnesi",
+            "title": "ფიტნესი & იოგა",
+            "img": "https://adjarastoremedia.s3.amazonaws.com/media/product_category/fitness_da_mateeebiii_mtavari_baneri_1.jpg"
+        },
+ 
+        {
+            "id": 12,
+            "Category": "kartuli",
+            "title": "მხოლოდ ქართული",
+            "img": "https://adjarastoremedia.s3.amazonaws.com/media/product_category/%E1%83%9B%E1%83%AE%E1%83%9D%E1%83%9A%E1%83%9D%E1%83%93_%E1%83%A5%E1%83%90%E1%83%A0%E1%83%97%E1%83%A3%E1%83%9A%E1%83%98_105x%E1%83%A4%E1%83%92%E1%83%A4%E1%83%92.jpg"
+        }, 
+        {
+            "id": 13,
+            "Category": "sakancelario",
+            "title": "საკანცელარიო & კრაფტი",
+            "img": "https://adjarastoremedia.s3.amazonaws.com/media/product_category/Artboard_1_copy_11_%E1%83%99%E1%83%A0%E1%83%90%E1%83%A4%E1%83%A2%E1%83%98_%E1%83%93%E1%83%90_%E1%83%AE%E1%83%94%E1%83%9A%E1%83%9D%E1%83%95%E1%83%9C%E1%83%94%E1%83%91%E1%83%90...png"
+        },
+        {
+            "id": 14,
+            "Category": "cxovelebi",
+            "title": "ცხოველების მოვლა",
+            "img": "https://adjarastoremedia.s3.amazonaws.com/media/product_category/cxovelebissss_mvlllaaaa.png"
+        }
+
+
+        
+        
+        
+        
+    ]
+

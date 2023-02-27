@@ -1,0 +1,51 @@
+.allbox{
+   margin: 40px;
+}
+.allctitle{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.allctg{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.allclosebtn{
+    height: 40px;
+    width: 40px;
+    font-size: 28px;
+    border-radius: 20px;
+    border: none;
+}
+
+
+
+.insidegrid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    
+}
+
+.itemttl{
+    padding-left: 10px;
+}
+
+.gridconteiner{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px 32px;
+   
+}
+
+.singleimg{
+
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+
+}
