@@ -48,7 +48,7 @@ function ManuSection() {
       {manu.map( item => (
         <SwiperSlide 
          key={item.id}>
-         <a href='./'
+         <a href={item.link}
          className='manubox'>
           <h4 className='manutitle'>{item.title}</h4>
           <div className='imgcont'>

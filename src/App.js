@@ -7,10 +7,6 @@ import Header from "./components/Header";
 import ManuSection from "./components/ManuSection"
 
 
-
-
-
-
 function App() {
 
   return (
