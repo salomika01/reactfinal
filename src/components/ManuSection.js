@@ -13,6 +13,8 @@ import {FaListUl} from "react-icons/fa"
 
 import { useState } from 'react';
 import Allcategory from './Allcategory';
+import { NavLink } from 'react-router-dom';
+
 
 
 function ManuSection() {
@@ -48,14 +50,23 @@ function ManuSection() {
       {manu.map( item => (
         <SwiperSlide 
          key={item.id}>
-         <a href={item.link}
-         className='manubox'>
-          <h4 className='manutitle'>{item.title}</h4>
-          <div className='imgcont'>
-            <img className='manuimg'
-             src={item.img} alt="" />
-          </div>
-         </a>
+          
+          <NavLink className="manubox"
+          to={item.link}>             
+   <h4 className='manutitle'>{item.title}</h4>
+   <div className='imgcont'>
+     <img className='manuimg'
+      src={item.img} alt="" />
+   </div>
+  </NavLink> 
+         
+       
+       
+       
+       
+       
+       
+       
         </SwiperSlide>
       ))}
 

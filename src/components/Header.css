@@ -1,4 +1,6 @@
 .header{
+  
+  
     display: flex;
     justify-content: space-between;
   
@@ -15,6 +17,7 @@
 
 .velilogo{
     width: 125px;
+    cursor: pointer;
 }
 
 .serchbar{
@@ -64,8 +67,17 @@
    border-radius: 8px;
     padding: 10px 18px;
     background: transparent;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
+.bskbtn:hover,
+.login:hover{
+    background-color: black;
+    color: #B4D984;
+    border: 1px solid black;
+    
+}
 
 
 

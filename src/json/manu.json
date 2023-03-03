@@ -4,13 +4,14 @@
     [
         {
             "id": 1,
-            "Category" : "Prezents",
-            "title": "საჩუქრები",
-            "img" : "https://adjarastoremedia.s3.amazonaws.com/media/product_category/100x100%E1%83%9C%E1%83%AC%E1%83%94%E1%83%98%E1%83%9D%E1%83%A4%E1%83%9C%E1%83%98%E1%83%AC%E1%83%94%E1%83%91%E1%83%A4%E1%83%98%E1%83%94%E1%83%A0%E1%83%B0%E1%83%A49348%E1%83%B073849%E1%83%B0%E1%83%A3348%E1%83%A4734%E1%83%B0%E1%83%A4%E1%83%A33%E1%83%A4.png",
-            "link": "Category/sachuqrebi"
+            "Category" : "silamaze",
+            "title": "სილამაზე",
+            "img" : "https://adjarastoremedia.s3.amazonaws.com/media/product_category/%E1%83%A1%E1%83%98%E1%83%9A%E1%83%90%E1%83%9B%E1%83%90%E1%83%96%E1%83%94_%E1%83%9B%E1%83%94%E1%83%98%E1%83%9C%E1%83%98....jpg",
+
+            "link": "Category/silamaze"
 
         },
-        {
+            {
             "id": 2,
             "Category" : "Technic",
             "title" : "ტექნიკა",
@@ -24,13 +25,14 @@
             "img": "https://adjarastoremedia.s3.amazonaws.com/media/product_category/%E1%83%90%E1%83%9A%E1%83%99%E1%83%9D%E1%83%B0%E1%83%9D%E1%83%9A%E1%83%98_main_page...jpg",
             "link":"Category/bari"
         },
-
+        
         {
             "id": 4,
             "Category": "silamaze",
-            "title": "სილამაზე",
-            "img" : "https://adjarastoremedia.s3.amazonaws.com/media/product_category/%E1%83%A1%E1%83%98%E1%83%9A%E1%83%90%E1%83%9B%E1%83%90%E1%83%96%E1%83%94_%E1%83%9B%E1%83%94%E1%83%98%E1%83%9C%E1%83%98....jpg",
-            "link": "Category/silamaze"
+            "title": "საჩუქრები",
+            "img" : "https://adjarastoremedia.s3.amazonaws.com/media/product_category/100x100%E1%83%9C%E1%83%AC%E1%83%94%E1%83%98%E1%83%9D%E1%83%A4%E1%83%9C%E1%83%98%E1%83%AC%E1%83%94%E1%83%91%E1%83%A4%E1%83%98%E1%83%94%E1%83%A0%E1%83%B0%E1%83%A49348%E1%83%B073849%E1%83%B0%E1%83%A3348%E1%83%A4734%E1%83%B0%E1%83%A4%E1%83%A33%E1%83%A4.png",
+
+            "link": "Category/sachuqrebi"
         },
         {
             "id": 5,

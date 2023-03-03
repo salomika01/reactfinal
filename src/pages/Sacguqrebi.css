@@ -1,0 +1,43 @@
+
+.movlaconteiner{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.wholeconteiner{
+    display: flex;
+    
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.dropmanubt{
+    width: 400px;
+}
+
+.singlprd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border: 1px solid black;
+  
+   
+    
+}
+
+.slmpnj{
+    display: flex;
+    
+    width: 60px;
+    overflow: hidden;
+   
+
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
