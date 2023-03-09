@@ -1,10 +1,9 @@
 function Login({closelogin}) {
 
     return (
-
-      
-     
-    <div className='loginconteiner'>
+     <div>
+      <div className="loginbg"></div>
+       <div className='loginconteiner'>
         <div className='closebtn'>
         <button onClick={() => {
           closelogin(false)
@@ -47,6 +46,8 @@ function Login({closelogin}) {
         <button className='ggl'>Google-ით შესვლა</button>
       </div>
     </div>
+    </div>
+    
 
     
     

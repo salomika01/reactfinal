@@ -4,11 +4,14 @@
 @import "./components/Login.css";
 @import "./components/Allcategory.css";
 @import "./pages/Sacguqrebi.css";
-
+@import "./components/buttons/Silamazedtlbtn.css";
+@import "./components/Secondsection.css";
+@import "./pages/Lierac.css";
 
 
 
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }

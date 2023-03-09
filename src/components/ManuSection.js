@@ -2,6 +2,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -20,6 +21,7 @@ import { NavLink } from 'react-router-dom';
 function ManuSection() {
 
   const [allct, setAllct] = useState(false)
+  
 
   return (
     
@@ -52,21 +54,13 @@ function ManuSection() {
          key={item.id}>
           
           <NavLink className="manubox"
-          to={item.link}>             
-   <h4 className='manutitle'>{item.title}</h4>
-   <div className='imgcont'>
-     <img className='manuimg'
-      src={item.img} alt="" />
-   </div>
-  </NavLink> 
-         
-       
-       
-       
-       
-       
-       
-       
+          to={`/${item.link}`}>           
+          <h4 className='manutitle'>{item.title}</h4>
+          <div className='imgcont'>
+            <img className='manuimg'
+             src={item.img} alt="" />  
+          </div>
+        </NavLink> 
         </SwiperSlide>
       ))}
 

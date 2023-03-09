@@ -7,6 +7,8 @@ import {FaRedo} from "react-icons/fa"
 
 import { useState } from "react";
 import Login from "./Login";
+import { NavLink } from "react-router-dom";
+
 
 
 
@@ -14,10 +16,14 @@ function Header() {
 const [login, setLogin] = useState(false)
 
   return (
+
     
     <div className="header">
      <div className="mainlogo">
+     <NavLink to='./' >
      <img className="velilogo" src={pngLogo} alt="velisore-logo" />
+     </NavLink>
+    
      </div>
       <div className="serchbar">
      <FaSearch className="searchicon" />
@@ -41,7 +47,11 @@ const [login, setLogin] = useState(false)
         </button>
          {login &&  <Login closelogin={setLogin} />}
       </div>
+     
     </div>
+  
+ 
+  
   )
 }
 

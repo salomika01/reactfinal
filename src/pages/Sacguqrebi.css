@@ -2,12 +2,16 @@
 .movlaconteiner{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
     
 }
 
+
+
 .wholeconteiner{
+    margin-top: 20px;
     display: flex;
-    
+    width: 95%;
     justify-content: space-between;
     flex-direction: row;
 }
@@ -20,20 +24,62 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    border: 1px solid black;
+    justify-content:space-around;
+    border: 1px solid rgb(215, 214, 214);
+    border-radius: 15px;
+    padding: 20px;
+    
   
    
     
 }
 
+.producttitle{
+    padding:10px;
+}
+
 .slmpnj{
-    display: flex;
+   
     
-    width: 60px;
+    width: 50px;
     overflow: hidden;
    
 
+}
+
+.favcont{
+    display: flex;
+    flex-direction: row;
+  
+ 
+}
+
+
+.favicons{
+    display: flex;
+    flex-direction:column;
+   
+   
+  
+
+}
+
+.fav,
+.bsk{
+   
+    font-size: 14px;
+   margin: 5px 5px 0px 10px;
+   
+   
+  
+    
+}
+
+.fav:hover{
+    color: red;
+}
+.bsk:hover{
+    color: #B4D984;
 }
 
 .info{
@@ -41,3 +87,21 @@
     flex-direction: column;
     align-items: center;
 }
+
+.dtlbox{
+   width: 500px;
+   
+}
+
+.title{
+    margin: 20px  50px;
+    letter-spacing: 2px;
+    
+}
+
+
+
+
+
+
+

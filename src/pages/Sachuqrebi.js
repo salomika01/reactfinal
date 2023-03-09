@@ -1,19 +1,25 @@
 
 import { Link } from "react-router-dom"
+import Silamazedtlbtn from "../components/buttons/Silamazedtlbtn"
 import silamaze from "../json/silamaze.json"
-import { DropdownButton, Dropdown } from 'react-bootstrap';
+import {FaRegHeart} from "react-icons/fa"
+import {FaShoppingCart} from "react-icons/fa"
+
+
+
+
 
 function Sachuqrebi() {
   return (
     <section className="wholeconteiner">
-      <div className="dropmanubt">
-      <DropdownButton id="dropdown-basic-button" title="Dropdown Menu">
-      <Dropdown.Item href="#">Option 1</Dropdown.Item>
-      <Dropdown.Item href="#">Option 2</Dropdown.Item>
-      <Dropdown.Item href="#">Option 3</Dropdown.Item>
-    </DropdownButton>
-      
-      
+      <div className="impbtns">
+        <h3 className="title" >დამატენიანებელი</h3>
+        <Silamazedtlbtn text="ფასი"/>
+        <Silamazedtlbtn  text="ბრენდი"/>
+        <Silamazedtlbtn  text="კანის ტიპი"/>
+        <Silamazedtlbtn  text="მზისგან დაცვა"/>
+        <Silamazedtlbtn  text="სქესი"/>
+        
       </div>
       <div className="movlaconteiner" >
         {silamaze.map((item) => {
@@ -21,14 +27,22 @@ function Sachuqrebi() {
             
              <Link key={item.id}
               className="singlprd">
-             <img className="slmpnj"
-             src={item.img} alt="poto" />
+                <div className="favcont">
+                <div> 
+                 <img className="slmpnj"
+                 src={item.img} alt="poto" />
+                  </div>  
+                 <div className="favicons">
+                  <FaRegHeart className="fav"/>
+                   <FaShoppingCart  className="bsk"/>  
+               </div>
+                </div>
              <div className="info">
               <div className="prices">
               <span>{item.newprice}</span>
               <span>{item.aldprice}</span>
               </div>
-              <span>
+              <span className="producttitle">
               {item.title}
               </span>
             

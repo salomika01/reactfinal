@@ -1,10 +1,9 @@
 
 .loginconteiner{
-    margin-bottom: 50px;
+margin-bottom: 50px;
 width: 460px;
 height: 500px;
-background: rgb(243, 239, 239);
-position: fixed;
+background: white;
 position: fixed;
 top: 50%;
 left: 50%;
@@ -81,12 +80,14 @@ border-radius: 10px;
    border-left: 0;
    border-right: 0;
    border-bottom: 2px solid black;
+   background: transparent;
 
 }
 .newpsw{
    margin: 14px;
    border: none;
    cursor: pointer;
+   background-color: transparent
 
 }
 
@@ -120,14 +121,26 @@ border-radius: 10px;
     height: 55px;
     width: 200px;
     margin: 10px;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 8px;
+
 }
 
 
 
-
-
-
-
+.loginbg{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background: rgba(49,49,49,0.8);
+    z-index: 2;
+    
+}
 
 
 
