@@ -1,5 +1,23 @@
+.singlebox{
+    display: flex;
+}
+
+.prices_{
+    width:400px;
+    height: 400px;
+    background-color: aquamarine;
+}
+
+
 .lieracont{
     width: 400px;
     height: 400px;
     background: red;
+  
+}
+
+.infocont{
+    background: blue;
+    width: 400px ;
+    height: 400px;
 }

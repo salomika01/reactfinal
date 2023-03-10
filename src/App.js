@@ -10,16 +10,26 @@ import { Route, Routes } from "react-router-dom";
 import Sachuqrebi from "./pages/Sachuqrebi";
 import Seconsection from "./components/Seconsection";
 import Lierac from "./pages/Lierac";
-
-
-
-
+import CartContext from "./context/cartContext";
+import { useState } from "react";
 
 
 function App() {
+  const [cartList, setCartList] = useState([]);
 
+ 
   return (
+    
+   <CartContext.Provider 
+   value={{
+    cart: cartList,
+    setCart: setCartList
+  }}>
+
+  
+    
     <div className="App">
+
       <Slogani />
        <Header />
        <Routes>    
@@ -31,11 +41,14 @@ function App() {
        <Seconsection/>
 
        <Lierac/>
-      
-      
-     
+
+
     </div>
+    
+    </CartContext.Provider>
+    
   );
+  
 }
 
 export default App;

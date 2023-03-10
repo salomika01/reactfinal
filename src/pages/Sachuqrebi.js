@@ -4,12 +4,16 @@ import Silamazedtlbtn from "../components/buttons/Silamazedtlbtn"
 import silamaze from "../json/silamaze.json"
 import {FaRegHeart} from "react-icons/fa"
 import {FaShoppingCart} from "react-icons/fa"
-
+import CartContext from "../context/cartContext";
+import { useContext } from "react";
 
 
 
 
 function Sachuqrebi() {
+
+  const { cart, setCart } = useContext(CartContext);
+  console.log(cart);
   return (
     <section className="wholeconteiner">
       <div className="impbtns">
@@ -26,15 +30,20 @@ function Sachuqrebi() {
           return( 
             
              <Link key={item.id}
+             to={silamaze.link}
               className="singlprd">
                 <div className="favcont">
                 <div> 
                  <img className="slmpnj"
                  src={item.img} alt="poto" />
-                  </div>  
+                 
+                </div>  
                  <div className="favicons">
-                  <FaRegHeart className="fav"/>
-                   <FaShoppingCart  className="bsk"/>  
+                  <button 
+                   className="favithembtn"> <FaRegHeart className="fav"/></button>
+                 <button  onClick={() => setCart([...cart, item])}
+                 className="bsktithembtn"><FaShoppingCart  className="bsk"/> </button>
+                    
                </div>
                 </div>
              <div className="info">
