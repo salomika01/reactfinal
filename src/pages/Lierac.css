@@ -1,23 +1,116 @@
 .singlebox{
     display: flex;
 }
-
-.prices_{
-    width:400px;
-    height: 400px;
-    background-color: aquamarine;
-}
-
-
 .lieracont{
-    width: 400px;
+    width: 650px;
     height: 400px;
-    background: red;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
   
 }
 
-.infocont{
-    background: blue;
-    width: 400px ;
+
+
+ .infocont{
+     
+     width: 400px ;
+     height: 400px;
+
+ }
+
+ .infocont p{
+    line-height: 30px;
+    margin-top: 20px;
+
+  
+ }
+
+ .infocont p span {
+    font-weight: 700;
+ }
+
+
+
+ 
+.prices_{
+  /*  */
+  /* position: fixed; */
+  /* z-index: 20; */
+margin-top: 40px;
+    width:400px;
     height: 400px;
 }
+
+.prscont{
+    display: flex;
+    flex-direction: column;
+   width: 90%;
+   height: 250px;
+   margin-top: 40px;
+  border-radius: 16px;
+  border: none;
+  padding-left: 20px;
+background: rgb(255, 255, 255);;
+box-shadow: rgba(203, 203, 203, 0.25) 0px 0px 16px;
+
+
+ 
+
+
+}
+
+.prscont span {
+    margin-top: 20px;
+}
+
+.freedeliv{
+    color: #acd873;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.prise{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.btns{
+   margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bsktbtn01{
+    border-radius: 8px;
+    border: none;
+    width: 270px;
+    padding: 10px 0px;
+    background-color: #B4D984;
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+
+ 
+}
+
+.shopbtn01{
+    border-radius: 8px;
+    border: none;
+    width: 270px;
+    padding: 10px 0px;
+    margin-top: 20px;
+    color:white;
+    background-color: black;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}  
+
+
+
+

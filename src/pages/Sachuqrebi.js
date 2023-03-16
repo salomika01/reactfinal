@@ -30,7 +30,7 @@ function Sachuqrebi() {
           return( 
             
              <Link key={item.id}
-             to={silamaze.link}
+             to={`/${item.link}`}
               className="singlprd">
                 <div className="favcont">
                 <div> 

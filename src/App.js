@@ -34,13 +34,13 @@ function App() {
        <Header />
        <Routes>    
         <Route path="Category/silamaze" element={ <Sachuqrebi />} />
-        
+        <Route path="Category/saxis-kanis-movla01" element={  <Lierac/>} />
        </Routes>
        <ManuSection />
 
        <Seconsection/>
 
-       <Lierac/>
+      
 
 
     </div>
