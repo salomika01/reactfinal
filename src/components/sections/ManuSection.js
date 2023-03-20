@@ -8,18 +8,18 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import manu from "../json/manu.json"
+import manu from "../../json/manu.json"
 
 import {FaListUl} from "react-icons/fa"
 
 import { useState } from 'react';
-import Allcategory from './Allcategory';
+import Allcategory from '../Allcategory';
 import { NavLink } from 'react-router-dom';
 
 
 
 function ManuSection() {
-
+ 
   const [allct, setAllct] = useState(false)
   
 

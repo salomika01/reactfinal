@@ -1,0 +1,17 @@
+.favpoto{
+    width: 180px;
+}
+
+.favconteiner{
+    display: flex;
+    justify-content: space-between
+    ;
+    height: 300px;
+    align-items: center;
+    
+   
+    
+}
+
+
+

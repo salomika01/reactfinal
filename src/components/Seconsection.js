@@ -1,17 +1,20 @@
 import React from 'react';
-import Photo from "../img/secton2pt.jpg"
-
+import spoto from "../img/secton2pt.jpg"
+import Rcheuli from './Rcheuli';
+import { Link } from 'react-router-dom';
 function Seconsection() {
   return (
     <>
-      <section className='section01'>
+      <Link 
+       className='section01'>
+      <Rcheuli />
         <div className='imgconteiner'>
-            <img className='section1'
-            src={Photo} alt="" />
+          <img className='spoto'
+           src={spoto} alt="" />
         </div>
         
         
-      </section>
+      </Link>
     </>
   )
 }

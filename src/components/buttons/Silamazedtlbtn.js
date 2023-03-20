@@ -1,11 +1,13 @@
+
 import {FaAngleDown} from "react-icons/fa"
 
-function Silamazedtlbtn({text}) {
+function Silamazedtlbtn({ text, ...props}) {
   return (
     
     <div className="sidemanubox"> 
     
-    <button className="dtlbtn" >
+    <button {...props}
+     className="dtlbtn" >
         <span className="btnttl">{text }</span>
          <FaAngleDown  />
    </button>

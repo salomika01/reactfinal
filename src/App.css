@@ -1,12 +1,14 @@
 @import "./components/Header.css";
 @import "./components/Slogani.css";
-@import "./components/ManuSection.css";
+@import "./components/sections/ManuSection.css";
 @import "./components/Login.css";
 @import "./components/Allcategory.css";
 @import "./pages/Sacguqrebi.css";
 @import "./components/buttons/Silamazedtlbtn.css";
 @import "./components/Secondsection.css";
 @import "./pages/Lierac.css";
+@import "./components/Footer.css";
+@import "./components/Rcheuli.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
 
@@ -19,4 +21,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
+}
+
+.slogani{
+  background: black;
+  color: white;
+ 
+  text-align: center;
+  padding: 10px 10px;
 }

@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "Category" : "damatenianebeli",
+        "title": " ბეჭედი",
+        "img" : "https://adjarastoremedia.s3.amazonaws.com/media/__sized__/product/4721099880053-thumbnail-200x200.png",
+        "link": ""
+        
+        
+    },
+    {
+        "id": 2,
+        "Category" : "damatenianebeli",
+        "title": " ბეჭედი",
+        "img" : "https://adjarastoremedia.s3.amazonaws.com/media/__sized__/product/4721099880053-thumbnail-200x200.png",
+        "link": ""
+    },
+    {
+        "id": 3,
+        "Category" : "damatenianebeli",
+        "title": " ბეჭედი",
+        "img" : "https://adjarastoremedia.s3.amazonaws.com/media/__sized__/product/4721099880053-thumbnail-200x200.png",
+        "link": ""
+    },
+    {
+        "id": 4,
+        "Category" : "damatenianebeli",
+        "title": " ბეჭედი",
+        "img" : "https://adjarastoremedia.s3.amazonaws.com/media/__sized__/product/4721099880053-thumbnail-200x200.png",
+        "link": ""
+
+    },
+    {
+        "id": 5,
+        "Category" : "damatenianebeli",
+        "title": " ბეჭედი",
+        "img" : "https://adjarastoremedia.s3.amazonaws.com/media/__sized__/product/4721099880053-thumbnail-200x200.png",
+        "link": ""
+    }
+]

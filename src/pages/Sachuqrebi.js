@@ -14,11 +14,19 @@ function Sachuqrebi() {
 
   const { cart, setCart } = useContext(CartContext);
   console.log(cart);
+
+  function clicked () {
+    return(
+      alert('funcion is clicked')
+    )
+  }
+
+
   return (
     <section className="wholeconteiner">
       <div className="impbtns">
         <h3 className="title" >დამატენიანებელი</h3>
-        <Silamazedtlbtn text="ფასი"/>
+        <Silamazedtlbtn onClick={clicked}  text="ფასი"/>
         <Silamazedtlbtn  text="ბრენდი"/>
         <Silamazedtlbtn  text="კანის ტიპი"/>
         <Silamazedtlbtn  text="მზისგან დაცვა"/>

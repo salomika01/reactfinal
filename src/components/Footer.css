@@ -1,0 +1,17 @@
+.footercont{
+    display: flex;
+    justify-content: space-between;
+  padding: 30px;
+    background: rgba(245, 246, 246, 0.6);
+height: 400px;
+}
+
+.footercont h4{
+    margin-bottom: 10px;
+}
+
+.footercont ul li {
+    list-style: none;
+    line-height: 30px;
+}
+

@@ -1,12 +1,24 @@
 import React, { Component } from 'react';
 import Lieracpn from "../img/lierac.png";
+import ReactImageMagnify from 'react-image-magnify';
 
 export default class Lierac extends Component {
   render() {
     return (
       <div className='singlebox'>
         <div className='lieracont'>
-          <img className='lieracpoto' src={Lieracpn} alt="" />
+        <ReactImageMagnify {...{
+        smallImage: {
+        alt: 'Wristwatch by Ted Baker London',
+        isFluidWidth: true,
+        src: Lieracpn
+        },
+        largeImage: {
+        src:Lieracpn,
+        width: 150,
+        height: 1200
+        }
+        }} />
         </div>
         <div className='infocont'>
           <p> <span>Lierac Anti-Age სახის ფლუიდი</span>

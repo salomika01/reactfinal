@@ -1,6 +1,17 @@
+
+
 function Login({closelogin}) {
 
-    return (
+  
+
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
+
+  
+  return (
      <div>
       <div className="loginbg"></div>
        <div className='loginconteiner'>
@@ -18,19 +29,34 @@ function Login({closelogin}) {
                 <button className='regbtn'>რეგისტრაცია</button>
             </span>
         </div>
-      <form className='formbox'
+      <form 
+      onSubmit={handleSubmit}
+       className='formbox'
        action="">
         <div className='forminput01'>
         <label className='lblmail'
          htmlFor="">მეილი</label>
-        <input className='inputm'
-        type="text"  />
+        <input 
+        className='inputm'
+        type="text" 
+      
+        
+        
+       
+        />
         </div>
         <div className='forminput02'>
-            <label className='lblpsw'
+            <label 
+            className='lblpsw'
              htmlFor="">პაროლი</label>
-            <input className='inputp'
-             type="text" />
+            <input
+             className='inputp'
+             type="text" 
+             
+             
+             
+           
+             />
         </div>
         <button className='newpsw'>დაგავიწყდა პაროლი?</button>
         <button 
