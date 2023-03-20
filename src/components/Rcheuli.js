@@ -6,7 +6,7 @@ function Rcheuli() {
       <h2>მომხმარებლის ფავორიტი პროდუქცია</h2>
       <div className="favconteiner">
       {rcheulebi.map((item) => {
-    return (
+      return (
       <div key={item.id}
        className="singlefav">
         <img className="favpoto"

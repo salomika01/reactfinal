@@ -1,0 +1,16 @@
+.sadzcont{
+    width: 90%;
+   margin: auto;
+    
+}
+
+.suratebi{
+    display: flex;
+    justify-content:space-between;
+   
+    
+}
+.suratebi img{
+    width: 350px;
+    border-radius: 20px;
+}

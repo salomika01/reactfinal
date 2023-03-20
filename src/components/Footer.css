@@ -1,4 +1,5 @@
 .footercont{
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
   padding: 30px;
