@@ -1,12 +1,21 @@
+import { useState } from "react";
 
 
 function Login({closelogin}) {
-
+const [inputValue01, setInputValue01] = useState('')
+const [inputValue02, setInputValue02] = useState('')
   
 
   
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    setInputValue01('')
+    setInputValue02('')
+
+    
+    
+  
   };
 
 
@@ -34,30 +43,38 @@ function Login({closelogin}) {
        className='formbox'
        action="">
         <div className='forminput01'>
-        <label className='lblmail'
-         htmlFor="">მეილი</label>
+        
+        
         <input 
         className='inputm'
         type="text" 
-      
+        placeholder="მეილი"
+        value={inputValue01 }
+        onChange={(e) =>setInputValue01(e.target.value) }
         
         
        
         />
         </div>
         <div className='forminput02'>
-            <label 
-            className='lblpsw'
-             htmlFor="">პაროლი</label>
             <input
              className='inputp'
              type="text" 
-             
-             
-             
-           
+             placeholder="პაროლი"
+             value={inputValue02}
+             onChange={(e) =>setInputValue02(e.target.value) }
+ 
              />
         </div>
+    
+     
+    
+    
+    
+    
+ 
+        
+        
         <button className='newpsw'>დაგავიწყდა პაროლი?</button>
         <button 
         className='loginbtn'>შესვლა</button>

@@ -29,19 +29,6 @@ export default function Allcategory({closeallctg}) {
         
       </div>
 
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
       
     </div>
   )
