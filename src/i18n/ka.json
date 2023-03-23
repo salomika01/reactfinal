@@ -1,17 +1,19 @@
 {
-"Free Shipping | Receive the order in Tbilisi in 3 hours, at your door " : " უფასო მიწოდება | მიიღე შეკვეთა თბილისში 3 საათში,შენს კართან",
-"Beauty": "Beauty",
+"Free Shipping" : "უფასო მიწოდება|მიიღე შეკვეთა თბილისში 3 საათში,შენს კართან",
+"Beauty": "სილამაზე",
 "Electonics" : "ტექნიკა",
-"Bar & More" : "ბარი & მეტი",
+"Bar & more": "ბარი & მეტი",
 "Gifts" : "საჩუქრები",
 "care" : "თავის მოვლა",
 "Home & Garden" : "სახლი და ეზო",
-"Houseold Care" : "სახლის მოვლა",
+"House Care": "სახლის მოვლა",
 "Toys & Games" : "სათამაშოები",
 "Books" : "წიგნები",
 "Parent & Child": "მშობელი & ბავშვი",
 "Fitness & yoga" : "ფიტნესი & იოგა",
 "Made in Georgia" : "მხოლოდ ქართული",
-"Stationery & Craft ": "საკანცელარიო & ჯრაფტი",
-"Pets" : "ცხოველები"
+"Stationery & Craft": "საკანცელარიო & ჯრაფტი",
+"Pets" : "ცხოველები",
+"lngSwitch": "შეცვალე ენა"
+
 }

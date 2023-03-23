@@ -1,46 +1,45 @@
-import i18n from "i18next";
-import { useTranslation, initReactI18next } from "react-i18next";
-
-i18n.use(initReactI18next).init({
-  resources: {
-    en: {
-      translation: require('../i18n/en.json')
-    },
-    ka: {
-      translation: require('../i18n/ka.json')
-    }
-  },
-  lng: "ka", 
-  fallbackLng: "en",
-
-  interpolation: {
-    escapeValue: false
-  }
-});
-
-
-
+import i18n from "../i18n/i18n";
+import { useTranslation, } from "react-i18next";
+import { useState, useEffect } from "react";
 
 function Slogani( ) {
-   const { t } = useTranslation();
-   const changeLanguage = (lng) => {
-      i18n.changeLanguage(lng);
-      console.log('salo')
-    }
+  const { t } = useTranslation();
+  const [language, setLanguage] = useState("en");
+
+  useEffect(() => {
+    changeLanguage(language);
+  }, [language]);
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
   
   
  return (
   
     <div className="slogani">
     <h5 >
-      {t(" Free Shipping | Receive the order in Tbilisi in 3 hours, at your door")}
+      {t("Free Shipping")}
       
       
    </h5>
     
     
-    <button onClick={() => changeLanguage('ka')}>qartuli</button>
-    <button onClick={() => changeLanguage('en')}>english</button>
+   
+   
+   
+  
+<button onClick={() =>  language === "en" ? setLanguage("ka") : setLanguage("en")}
+ className="switch" >
+  <input type="checkbox" />
+  <span className="slider" />
+</button>
+
+          
+          
+          
+          
+    
     
   
       </div>

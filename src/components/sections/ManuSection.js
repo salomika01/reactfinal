@@ -15,12 +15,16 @@ import {FaListUl} from "react-icons/fa"
 import { useState } from 'react';
 import Allcategory from '../Allcategory';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+
+
 
 
 
 function ManuSection() {
  
   const [allct, setAllct] = useState(false)
+  const { t } = useTranslation();
   
 
   return (
@@ -55,7 +59,7 @@ function ManuSection() {
           
           <NavLink className="manubox"
           to={`/${item.link}`}>           
-          <h4 className='manutitle'>{item.title}</h4>
+          <h4 className='manutitle'>{t(item.title)}</h4>
           <div className='imgcont'>
             <img className='manuimg'
              src={item.img} alt="" />  
