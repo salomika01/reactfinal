@@ -6,6 +6,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@hookform/resolvers": "^3.0.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -16,6 +17,7 @@
     "react-bootstrap": "^2.7.2",
     "react-bootstrap-icons": "^1.10.2",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.7",
     "react-i18next": "^12.2.0",
     "react-icons": "^4.7.1",
     "react-image-magnify": "^2.7.4",
@@ -27,7 +29,8 @@
     "sass": "^1.58.3",
     "slick-carousel": "^1.8.1",
     "swiper": "^9.0.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "^1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",

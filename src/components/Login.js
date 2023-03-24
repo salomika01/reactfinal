@@ -1,101 +1,115 @@
-import { useState } from "react";
+import { useReducer,  } from "react";
+import { useForm } from "react-hook-form";
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from "yup";
 
 
-function Login({closelogin}) {
-const [inputValue01, setInputValue01] = useState('')
-const [inputValue02, setInputValue02] = useState('')
-  
 
-  
-  const handleSubmit = (e) => {
-    e.preventDefault();
+const initialForm = {
+  name: "",
+  password: ""
+};
 
-    setInputValue01('')
-    setInputValue02('')
+const formValidation = yup.object(
+  {
+    name: yup.string().required(),
+    password: yup.number().positive().integer().required()
+  }
+).required();
 
-    
-    
-  
-  };
+function handleInputChange(state, action) {
+  switch (action.type) {
+    case "name":
+      return { ...state, name: action.value };
+    case "password":
+      return { ...state, password: action.value };
 
-
-  
-  return (
-     <div>
-      <div className="loginbg"></div>
-       <div className='loginconteiner'>
-        <div className='closebtn'>
-        <button onClick={() => {
-          closelogin(false)
-        }}
-         className='closereg'>&times;</button>
-        </div>
-        
-        <div className='avtorizacia'>
-            <h2>გაიარე ავტორიზაცია</h2>
-            <span className='options'>
-                <button className='autbtn'>ავტორიზაცია</button>
-                <button className='regbtn'>რეგისტრაცია</button>
-            </span>
-        </div>
-      <form 
-      onSubmit={handleSubmit}
-       className='formbox'
-       action="">
-        <div className='forminput01'>
-        
-        
-        <input 
-        className='inputm'
-        type="text" 
-        placeholder="მეილი"
-        value={inputValue01 }
-        onChange={(e) =>setInputValue01(e.target.value) }
-        
-        
-       
-        />
-        </div>
-        <div className='forminput02'>
-            <input
-             className='inputp'
-             type="text" 
-             placeholder="პაროლი"
-             value={inputValue02}
-             onChange={(e) =>setInputValue02(e.target.value) }
- 
-             />
-        </div>
-    
-     
-    
-    
-    
-    
- 
-        
-        
-        <button className='newpsw'>დაგავიწყდა პაროლი?</button>
-        <button 
-        className='loginbtn'>შესვლა</button>
-      </form>
-      <div className='oroptio'>
-        <span>ან</span>
-      </div>
-      <div className='loginsocial'>
-        
-         <button className='fcbk'> Facebook-ით შესვლა</button>
-         
-        <button className='ggl'>Google-ით შესვლა</button>
-      </div>
-    </div>
-    </div>
-    
-
-    
-    
-   
-  )
+    default:
+      break;
+  }
 }
 
+const Login = ({closelogin}) => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors }
+  } = useForm({
+    defaultValues: initialForm,
+    resolver: yupResolver(formValidation)
+  });
+  // const [value, setValue] = useState("Initial Value");
+  // const [title, setTitle] = useState(value);
+  
+  const [state, dispatch] = useReducer(handleInputChange, initialForm);
+
+  // function onSubmit(e) {
+    // e.preventDefault();
+    // setTitle(value);
+    // alert(`Form is Submited! Value: ${value}`);
+  // }
+
+  const formika = (data) => console.log(data);
+  console.log(errors);
+  // console.log(state);
+  return (
+    <div>
+      <div className="loginbg"></div>
+    <section className="formcont">
+     
+      <form onSubmit={handleSubmit(formika)}>
+        <div className="logheader">
+        <h2>გაიარე ავტორიზაცია</h2>
+         <button 
+         className="closereg"
+         onClick={() => {
+          closelogin(false)
+        }}
+         >&times;</button>
+        </div>
+        
+        
+        <label htmlFor="">
+          
+          <input className="name"
+          placeholder="მეილი"
+            type="text"
+            {...register("name", { required: "This field is required." })}
+            value={state.name}
+            onChange={(e) => dispatch({ type: "name", value: e.target.value })}
+          />
+          <br/>
+          {errors.name && <span>{errors.name?.message}</span>}
+        </label>
+        <label htmlFor="">
+          
+          <input className="pasword"
+          placeholder="პაროლი"
+            type="password"
+            {...register("password", {required: "sheavse"})}
+            value={state.password}
+            onChange={(e) =>
+              dispatch({ type: "password", value: e.target.value })
+            }
+          />
+           <br/>
+        {errors.password && <span>{errors.password?.message}</span>}
+        </label>
+        <button className="forgotpsw"
+        >დაგავიწყდა პაროლი?</button>
+        <button className="loginbtn"
+         type="submit"> შესვლა</button>
+        <div className="orcont">
+          <button className="or">ან</button>
+        </div>
+        <div className="social">
+          <button className="fcbk"> Facebook-ით შესვლა</button>
+          <button className="ggl">Google-ით შესვლა</button>
+        </div>
+      </form>
+      
+    </section>
+    </div>
+  );
+};
 export default Login

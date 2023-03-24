@@ -28,19 +28,12 @@ function Slogani( ) {
    
    
    
-  
-<button onClick={() =>  language === "en" ? setLanguage("ka") : setLanguage("en")}
- className="switch" >
+  <label className="switch" >
+  <button className="btn"
+  onClick={() =>  language === "en" ? setLanguage("ka") : setLanguage("en")} ></button>
   <input type="checkbox" />
   <span className="slider" />
-</button>
-
-          
-          
-          
-          
-    
-    
+  </label>          
   
       </div>
   )
