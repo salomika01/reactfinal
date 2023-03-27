@@ -8,16 +8,24 @@ import {FaRedo} from "react-icons/fa"
 import { useState } from "react";
 import Login from "./Login";
 import { NavLink } from "react-router-dom";
+import ManuSection from "./ManuSection";
+import manu from "../json/manu.json"
 
 
 
 
 function Header() {
 const [login, setLogin] = useState(false)
+const [search, setSearch] = useState("")
+// const Search = (manu) => {
+  // return manu.filter((item) => item.title.toLowercase().includes(search))
+// }
+console.log(search)
 
   return (
 
-    
+    <div>
+      
     <div className="header">
      <div className="mainlogo">
      <NavLink to='./' >
@@ -27,7 +35,8 @@ const [login, setLogin] = useState(false)
      </div>
       <div className="serchbar">
      <FaSearch className="searchicon" />
-        <input className="serch"
+        <input onChange={(e) => setSearch(e.target.value)}
+         className="serch"
         type="text" 
         placeholder="რას ეძებ?"
         />
@@ -48,8 +57,10 @@ const [login, setLogin] = useState(false)
          {login &&  <Login closelogin={setLogin} />}
       </div>
      
+     
     </div>
-  
+    <ManuSection   />
+    </div>  
  
   
   )

@@ -8,14 +8,18 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import manu from "../../json/manu.json"
+import manu from "../json/manu.json"
 
 import {FaListUl} from "react-icons/fa"
 
 import { useState } from 'react';
-import Allcategory from '../Allcategory';
+import Allcategory from './Allcategory';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+
+
+
+
 
 
 
@@ -25,11 +29,16 @@ function ManuSection() {
  
   const [allct, setAllct] = useState(false)
   const { t } = useTranslation();
+
+
   
 
   return (
-    
+    <div>
+     
 <div className='slide'>
+ 
+ 
 <div className='allcategorybox'>
   <button onClick={() => {
     setAllct(true)
@@ -55,10 +64,13 @@ function ManuSection() {
     >
       {manu.map( item => (
         <SwiperSlide 
-         key={item.id}>
+         key={item.id}
+        >
           
           <NavLink className="manubox"
-          to={`/${item.link}`}>           
+          to={`/${item.link}`}
+        >   
+                  
           <h4 className='manutitle'>{t(item.title)}</h4>
           <div className='imgcont'>
             <img className='manuimg'
@@ -70,6 +82,7 @@ function ManuSection() {
 
     </Swiper>
 
+    </div>
     </div>
   );
 };

@@ -2,39 +2,60 @@
     {
         "id": 1,
         "Category" : "damatenianebeli",
-        "title": " ბეჭედი",
-        "img" : "https://adjarastoremedia.s3.amazonaws.com/media/__sized__/product/4721099880053-thumbnail-200x200.png",
-        "link": ""
+        "title": "Lana Del Rey - Paradise",
+         "img": "https://adjarastoremedia.s3.amazonaws.com/media/__sized__/product/Lana_Del_Rey_-_Paradise1-thumbnail-200x200-95.jpg",
+        "link": "",
+        "newprise":"99 ₾",
+        "oldprise":"119 ₾"
         
         
     },
     {
         "id": 2,
         "Category" : "damatenianebeli",
-        "title": " ბეჭედი",
-        "img" : "https://adjarastoremedia.s3.amazonaws.com/media/__sized__/product/4721099880053-thumbnail-200x200.png",
-        "link": ""
+        "title": "Led Zeppelin - IV",
+        "img": "https://adjarastoremedia.s3.amazonaws.com/media/__sized__/product/Led_Zeppelin_-_IV-thumbnail-200x200-95.jpg",
+        "link": "",
+        "newprise":"99 ₾",
+        "oldprise":"119 ₾"
     },
     {
         "id": 3,
         "Category" : "damatenianebeli",
-        "title": " ბეჭედი",
-        "img" : "https://adjarastoremedia.s3.amazonaws.com/media/__sized__/product/4721099880053-thumbnail-200x200.png",
-        "link": ""
+        "title": "Pink Floyd - The Wall",
+        "img": "https://adjarastoremedia.s3.amazonaws.com/media/__sized__/product/Pink_Floyd_-_The_Wall-thumbnail-200x200-95.jpg",
+        "link": "",
+        "newprise":"99 ₾",
+        "oldprise":"119 ₾"
     },
     {
         "id": 4,
         "Category" : "damatenianebeli",
-        "title": " ბეჭედი",
-        "img" : "https://adjarastoremedia.s3.amazonaws.com/media/__sized__/product/4721099880053-thumbnail-200x200.png",
-        "link": ""
+        "title": "Aerosmith - Greatest Hits",
+        "img": "https://adjarastoremedia.s3.amazonaws.com/media/__sized__/product/Aerosmith_-_Greatest_Hits-thumbnail-200x200.png",
+        "link": "",
+        "newprise":"99 ₾",
+        "oldprise":"119 ₾"
 
     },
     {
         "id": 5,
         "Category" : "damatenianebeli",
-        "title": " ბეჭედი",
-        "img" : "https://adjarastoremedia.s3.amazonaws.com/media/__sized__/product/4721099880053-thumbnail-200x200.png",
-        "link": ""
+        "title": "Led Zeppelin - II",
+        "img": "https://adjarastoremedia.s3.amazonaws.com/media/__sized__/product/Led_zeppelin_II-thumbnail-200x200.png",
+        "link": "",
+        "newprise":"99 ₾",
+        "oldprise":"119 ₾"
+    },
+    {
+        "id": 6,
+        "Category" : "damatenianebeli",
+        "title": "Miles Davis - In St Louis",
+        "img": "https://adjarastoremedia.s3.amazonaws.com/media/__sized__/product/Miles_Davis_-_In_St_Louis-thumbnail-200x200-95.jpg",
+        "link": "",
+        "newprise":"99 ₾",
+        "oldprise":"119 ₾"
     }
+    
+
 ]

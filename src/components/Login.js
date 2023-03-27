@@ -1,7 +1,8 @@
-import { useReducer,  } from "react";
+import { useReducer,useEffect  } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
+
 
 
 
@@ -29,10 +30,16 @@ function handleInputChange(state, action) {
   }
 }
 
+
+
+
 const Login = ({closelogin}) => {
+
+
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors }
   } = useForm({
     defaultValues: initialForm,
@@ -52,6 +59,16 @@ const Login = ({closelogin}) => {
   const formika = (data) => console.log(data);
   console.log(errors);
   // console.log(state);
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
   return (
     <div>
       <div className="loginbg"></div>
@@ -75,8 +92,8 @@ const Login = ({closelogin}) => {
           placeholder="მეილი"
             type="text"
             {...register("name", { required: "This field is required." })}
-            value={state.name}
-            onChange={(e) => dispatch({ type: "name", value: e.target.value })}
+            // value={state.name}
+            // onChange={(e) => dispatch({ type: "name", value: e.target.value })}
           />
           <br/>
           {errors.name && <span>{errors.name?.message}</span>}
@@ -86,18 +103,26 @@ const Login = ({closelogin}) => {
           <input className="pasword"
           placeholder="პაროლი"
             type="password"
-            {...register("password", {required: "sheavse"})}
-            value={state.password}
-            onChange={(e) =>
-              dispatch({ type: "password", value: e.target.value })
-            }
+            {...register("password", {required: ""})}
+            // value={state.password}
+            // onChange={(e) =>
+              // dispatch({ type: "password", value: e.target.value })}
           />
            <br/>
         {errors.password && <span>{errors.password?.message}</span>}
         </label>
         <button className="forgotpsw"
         >დაგავიწყდა პაროლი?</button>
-        <button className="loginbtn"
+        <button onClick={() => {
+        reset({
+          firstName: "bill"
+        }, {
+          keepErrors: true, 
+         
+        });
+      }} 
+
+         className="loginbtn"
          type="submit"> შესვლა</button>
         <div className="orcont">
           <button className="or">ან</button>

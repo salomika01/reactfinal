@@ -37,15 +37,16 @@ function Sachuqrebi() {
         {silamaze.map((item) => {
           return( 
             
-             <Link key={item.id}
-             to={`/${item.link}`}
+             <div key={item.id}
+           
               className="singlprd">
                 <div className="favcont">
-                <div> 
+                <Link   to={`/${item.link}`}> 
+                  
                  <img className="slmpnj"
                  src={item.img} alt="poto" />
                  
-                </div>  
+                </Link>  
                  <div className="favicons">
                   <button 
                    className="favithembtn"> <FaRegHeart className="fav"/></button>
@@ -64,7 +65,7 @@ function Sachuqrebi() {
               </span>
             
              </div>
-             </Link>
+             </div>
            
            
           )

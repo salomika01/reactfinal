@@ -16,7 +16,8 @@ export default function Allcategory({closeallctg}) {
       {manu.map((item) => {
        return(
      
-     <button  className="insidegrid">
+     <button key={item.id}
+      className="insidegrid">
      <span className="itemttl">
        {item.title}
      </span>

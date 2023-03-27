@@ -14,7 +14,7 @@ import CartContext from "./context/cartContext";
 import { useState,} from "react";
 import Slogani from "./components/Slogani";
 import Seconsection from "./components/Seconsection";
-import ManuSection from "./components/sections/ManuSection";
+
 
 import Footer from "./components/Footer";
 
@@ -40,7 +40,7 @@ function App() {
 
        <Slogani />
        <Header />
-       <ManuSection />
+   
        
        <Routes>  
         

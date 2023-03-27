@@ -1,6 +1,7 @@
 
 .favpoto{
-    width: 180px;
+    width: 170px;
+   
 }
 
 .favconteiner{
@@ -9,11 +10,38 @@
     ;
     height: 300px;
     align-items: center;
-    width: 90%;
-    margin: auto;
+ 
+
     
-   
-    
+}
+
+.cont{
+width: 90%;
+margin: auto;
+}
+
+/* .singlefav{ */
+    /* border: 1px solid rgb(221, 213, 213); */
+/*   */
+/* } */
+
+.singlefav h4{
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+  
+}
+
+
+
+.newprs{
+    font-weight: 700;
+}
+
+.oldprs{
+    text-decoration: line-through;
+    margin-left: 20px;
+    color: rgb(136, 135, 135);
 }
 
 
