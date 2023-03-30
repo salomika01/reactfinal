@@ -4,7 +4,7 @@ import "./App.css";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-import Header from "./components/Header";
+
 
 import { Route, Routes } from "react-router-dom";
 import Sachuqrebi from "./pages/Sachuqrebi";
@@ -14,6 +14,7 @@ import CartContext from "./context/cartContext";
 import { useState,} from "react";
 import Slogani from "./components/Slogani";
 import Seconsection from "./components/Seconsection";
+import ManuSection from "./components/ManuSection";
 
 
 import Footer from "./components/Footer";
@@ -39,7 +40,7 @@ function App() {
     </div>
 
        <Slogani />
-       <Header />
+      <ManuSection />
    
        
        <Routes>  

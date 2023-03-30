@@ -16,6 +16,13 @@ import { useState } from 'react';
 import Allcategory from './Allcategory';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import Login from "./Login";
+import {  FaSearch } from "react-icons/fa";
+import {FaShoppingCart} from "react-icons/fa"
+import pngLogo from "../img/velilogo.png"
+import {FaUser} from "react-icons/fa"
+import {FaRedo} from "react-icons/fa"
+
 
 
 
@@ -26,16 +33,53 @@ import { useTranslation } from 'react-i18next';
 
 
 function ManuSection() {
+  const [login, setLogin] = useState(false)
  
   const [allct, setAllct] = useState(false)
   const { t } = useTranslation();
 
-
+  const [search, setSearch] = useState("")
+  console.log(search)
   
 
   return (
     <div>
-     
+       <div className="header">
+  <div className="mainlogo">
+  <NavLink to='./' >
+  <img className="velilogo" src={pngLogo} alt="velisore-logo" />
+  </NavLink>
+ 
+  </div>
+   <div className="serchbar">
+  <FaSearch className="searchicon" />
+     <input 
+      onChange={(e) => setSearch(e.target.value)} 
+      className="serch"
+     type="text" 
+     placeholder="რას ეძებ?"
+     />
+     <FaRedo className="redo" />
+   </div>
+   <div className="persinpo">
+    <button className="bskbtn">
+     <FaShoppingCart  className="basketicon" />
+     <span className="basket">კალათა</span>
+    </button>
+    <button onClick={() => {
+     setLogin(true)
+    }}
+     className="login">
+     <FaUser className="usicon"/>
+     <span className="lgn"> შესვლა </span>
+     </button>
+      {login &&  <Login closelogin={setLogin} />}
+   </div>
+  
+  
+ </div>
+      
+
 <div className='slide'>
  
  
@@ -62,7 +106,7 @@ function ManuSection() {
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
     >
-      {manu.map( item => (
+      {manu.filter(item =>item.title.toLocaleLowerCase().includes(search)).map( item => (
         <SwiperSlide 
          key={item.id}
         >
