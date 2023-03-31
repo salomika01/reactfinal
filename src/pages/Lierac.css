@@ -1,5 +1,9 @@
+section h1{
+    margin: 60px 0px 0px 40px;
+}
 .singlebox{
     display: flex;
+    margin-top: 20px;
 }
 .lieracont{
     width: 650px;

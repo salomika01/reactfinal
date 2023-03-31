@@ -1,0 +1,55 @@
+.similarbox{
+    
+    border-top: 1px solid rgb(163, 162, 162);
+    width: 92%;
+    margin: auto;
+}
+
+.similarbox h2{
+    margin-top: 40px;
+}
+
+.similarbox h3 {
+    margin: 60px 0px 10px 0px;
+}
+
+.similarbox p{
+    font-size: 16px;
+    line-height: 24px;
+}
+.simproduct{
+   display: flex;
+   gap :40px;
+   margin-top: 20px;
+  
+    
+}
+.simproduct img {
+   display: block;
+   margin-left: 30px;
+  
+  
+    
+}
+
+
+.simproduct span{
+    padding: 10px;
+    font-size: 15px;
+}
+
+.newprice{
+    font-weight: 600;
+}
+
+.oldprice{
+    text-decoration: line-through;
+}
+
+.simproduct p{
+    font-size: 16px;
+}
+
+.textwrapper{
+    width:800px ;
+}

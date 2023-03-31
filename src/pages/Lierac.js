@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import Lieracpn from "../img/lierac.png";
 import ReactImageMagnify from 'react-image-magnify';
+import Similarpr from './Similarpr';
 
 export default class Lierac extends Component {
   render() {
     return (
+      <section>
+        <h1>Lierac Anti-Age სახის ფლუიდი</h1>
       <div className='singlebox'>
         <div className='lieracont'>
         <ReactImageMagnify {...{
@@ -46,6 +49,8 @@ export default class Lierac extends Component {
           </div>
         </div>
       </div>
+      <Similarpr />
+      </section>
     )
   }
 }
