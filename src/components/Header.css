@@ -92,6 +92,16 @@
     
 }
 
+.quantity{
+    color: red;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    font-weight: 700;
+   
+  
+}
+
 .login{
     display: flex;
     align-items: center;

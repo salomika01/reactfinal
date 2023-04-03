@@ -14,7 +14,7 @@ import {FaListUl} from "react-icons/fa"
 
 import { useState } from 'react';
 import Allcategory from './Allcategory';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Login from "./Login";
 import {  FaSearch } from "react-icons/fa";
@@ -22,18 +22,14 @@ import {FaShoppingCart} from "react-icons/fa"
 import pngLogo from "../img/velilogo.png"
 import {FaUser} from "react-icons/fa"
 import {FaRedo} from "react-icons/fa"
-
-
-
-
-
-
-
-
+// import Cartitem from './Cartitem';
 
 
 function ManuSection() {
   const [login, setLogin] = useState(false)
+  const [basket, setBasket] = useState(false)
+
+  
  
   const [allct, setAllct] = useState(false)
   const { t } = useTranslation();
@@ -62,14 +58,22 @@ function ManuSection() {
      <FaRedo className="redo" />
    </div>
    <div className="persinpo">
-    <button className="bskbtn">
+    <Link to="/cart">
+    <button 
+      onClick={() => { setBasket(true) }}
+ 
+
+    className="bskbtn">
      <FaShoppingCart  className="basketicon" />
+     <span className='quantity'>0</span>
      <span className="basket">კალათა</span>
+    {/* {basket && <Cartitem closebsk={setBasket} /> } */}
+
     </button>
-    <button onClick={() => {
-     setLogin(true)
-    }}
-     className="login">
+    </Link>
+    <button  className="login"
+    onClick={() => { setLogin(true) }}
+    >
      <FaUser className="usicon"/>
      <span className="lgn"> შესვლა </span>
      </button>
@@ -113,6 +117,7 @@ function ManuSection() {
           
           <NavLink className="manubox"
           to={`/${item.link}`}
+          
         >   
                   
           <h4 className='manutitle'>{t(item.title)}</h4>

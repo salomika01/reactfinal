@@ -1,0 +1,113 @@
+/* .background{ */
+    /* width: 100vw; */
+    /* height: 100vh; */
+    /* top: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* bottom: 0; */
+    /* position: fixed; */
+    /* background: rgba(49,49,49,0.8); */
+    /* z-index: 2; */
+/* } */
+/*  */
+/* .cart{ */
+    /* margin-bottom: 50px; */
+/* width: 600px; */
+/* height: 400px; */
+/* background: white; */
+/* position: fixed; */
+/* top: 50%; */
+/* left: 50%; */
+/* transform: translate(-50%, -50%); */
+/* z-index: 100; */
+/* border-radius: 10px; */
+/* padding: 20px; */
+/*  */
+/* } */
+.wholecont{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+}
+
+.kalata{
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    
+
+    margin: auto;
+}
+
+.kalata button{
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 24px;
+}
+.singleproduct{
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    width: 300px;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+  
+   background: rgb(255, 255, 255);
+   box-shadow: rgba(183, 180, 180, 0.30) 0px 0px 16px;
+}
+
+.singlepnj{
+    width: 30px;
+}
+
+.pprices span{
+  font-size: 14px;
+ 
+ 
+}
+
+.ptitle{
+    text-align: center;
+}
+
+.new{
+    font-weight: 600;
+}
+
+.prew{
+    text-decoration: line-through;
+}
+
+ .countinpt{
+    width: 30px;
+   text-align: center;
+   font-weight: 600;
+ }
+
+ .count button{
+    width: 20px;
+    margin: 5px;
+   
+ }
+
+ .checkout{
+  
+   border-top: 1px solid black;
+    width: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+ }
+
+ .checkout button{
+    padding: 14px 40px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+ }
+
