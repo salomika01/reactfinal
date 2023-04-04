@@ -7,8 +7,10 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-function Cartitem({closebsk}) {
-  const navigate = useNavigate()  
+function Cartitem({closekalata}) {
+  const navigate = useNavigate() 
+   
+
 
     const { cartItems,   } = useContext(ShopContext);
     // const totalAmount = getTotalCartAmount();
@@ -20,38 +22,29 @@ function Cartitem({closebsk}) {
        
      <div className='cart'>
         <div className='kalata'>
-        <h2>კალათა</h2>
-        <button onClick={() => closebsk(false)}
- >&times;</button>
+        <h4> ჩემი კალათა</h4>
+        <button  onClick={() => { closekalata(false)}} > &times; </button>
 
         </div>
  
     {silamaze.map((item) => {
      if (cartItems[item.id] !== 0) {
-       return <CartItems key={item.id} data={item} />;
+       return  <CartItems key={item.id} data={item} />;
      }
    })}
    
      
      
-     
+   <div className="checkout">
+  <p> სულ:  </p>
+  <button onClick={() => navigate("/")}> ყიდვა </button>
+        
+  
+</div>
      
      
 
      </div>
-
-    
-        <div className="checkout">
-          <p> სულ:  </p>
-          <button onClick={() => navigate("/")}> ყიდვა </button>
-        
-          
-        </div>
-     
-     
-     
-
-
     </div>
      
   )

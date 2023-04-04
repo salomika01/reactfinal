@@ -22,16 +22,16 @@ import {FaShoppingCart} from "react-icons/fa"
 import pngLogo from "../img/velilogo.png"
 import {FaUser} from "react-icons/fa"
 import {FaRedo} from "react-icons/fa"
-// import Cartitem from './Cartitem';
+import Cartitem from './Cartitem';
+
+
 
 
 function ManuSection() {
   const [login, setLogin] = useState(false)
-  const [basket, setBasket] = useState(false)
-
-  
- 
   const [allct, setAllct] = useState(false)
+  const [kalata, setKalata] =useState(false)
+  
   const { t } = useTranslation();
 
   const [search, setSearch] = useState("")
@@ -60,25 +60,28 @@ function ManuSection() {
    <div className="persinpo">
     <Link to="/cart">
     <button 
-      onClick={() => { setBasket(true) }}
- 
-
-    className="bskbtn">
+    className="bskbtn"
+    onClick={() => { setKalata(true) }}
+    >
      <FaShoppingCart  className="basketicon" />
-     <span className='quantity'>0</span>
+     {/* <span className='quantity'>0</span> */}
      <span className="basket">კალათა</span>
-    {/* {basket && <Cartitem closebsk={setBasket} /> } */}
+  
 
     </button>
+    {kalata &&  <Cartitem closekalata={setKalata} />}
     </Link>
-    <button  className="login"
+    <button 
+     className="login"
     onClick={() => { setLogin(true) }}
     >
      <FaUser className="usicon"/>
      <span className="lgn"> შესვლა </span>
      </button>
       {login &&  <Login closelogin={setLogin} />}
+      
    </div>
+  
   
   
  </div>

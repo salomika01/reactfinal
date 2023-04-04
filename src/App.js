@@ -19,7 +19,7 @@ import ManuSection from "./components/ManuSection";
 
 import Footer from "./components/Footer";
 // import { useState } from "react";
-import Cartitem from "./components/Cartitem";
+// import Cartitem from "./components/Cartitem";
 import { ShopContextProvider } from "./context/cartContext";
 
 
@@ -32,9 +32,10 @@ function App() {
     <ShopContextProvider >
    <Slogani />
    <ManuSection  />
+  
  
  <Routes>  
-  <Route  path="/cart" element={<Cartitem />} />
+  {/* <Route  path="/cart" element={<Cartitem />} /> */}
   <Route path="Category/silamaze" element={  <Sachuqrebi />} />
   <Route path="Category/saxis-kanis-movla01" element={  <Lierac/>} />
   <Route path="/"  element={<Seconsection/>}/>
